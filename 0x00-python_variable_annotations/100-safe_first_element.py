@@ -6,6 +6,7 @@ Module for safely getting the first element of a sequence.
 
 from typing import Sequence, Any, Union
 
+
 def safe_first_element(lst: Sequence[Any]) -> Union[Any, None]:
     """
     Returns the first element of the list if it exists, if not returns None.
@@ -17,4 +18,3 @@ def safe_first_element(lst: Sequence[Any]) -> Union[Any, None]:
         return lst[0]
     else:
         return None
-    
