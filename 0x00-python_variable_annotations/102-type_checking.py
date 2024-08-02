@@ -11,14 +11,18 @@ def zoom_array(lst: Tuple[int, ...], factor: int = 2) -> List[int]:
     """
     Zoom in on elements of a tuple by a given factor.
 
-    :param lst: Tuple of integers
-    :param factor: Factor by which to zoom in on the elements
-    :return: A list with elements repeated according to the factor
+    Parameters:
+        lst (Tuple[int, ...]): A tuple of integers.
+        factor (int, optional): The factor by which to zoom in on the elements.
+            Defaults to 2.
+
+    Returns:
+        List[int]: A list with elements repeated according to the factor.
     """
-    zoomed_in: List[int] = [
-        item for item in lst
-        for i in range(factor)
-    ]
+
+    # Create a list by repeating each element in the tuple 'factor' times.
+    zoomed_in = [item for item in lst for _ in range(factor)]
+
     return zoomed_in
 
 
