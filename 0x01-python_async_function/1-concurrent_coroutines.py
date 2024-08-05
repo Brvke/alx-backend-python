@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-
+''' a modlue housing the wait_n async function '''
 import asyncio
 from typing import List
 wait_random = __import__('0-basic_async_syntax').wait_random
